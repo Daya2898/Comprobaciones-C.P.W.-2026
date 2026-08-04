@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripcion de la pagina Escuela musica-Ecos del tiempo">
+    <meta name="keywords" content="Escuela de Musica, Ecos del tiempo, Musica, Clases de Musica,contactos">
+    <meta name="author" content="Dayanna sanchez jimenez">
+
+        <title>Inicio | Escuela de Musica - Ecos del Tiempo</title>
+        <link rel="icon" href="recursos/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header id="inicio">
+        <h1>Escuela de Musica - Ecos del Tiempo</h1>
+        <p>La Escuela de Musica -Ecos del Tiempo donde aprenderas sobre musica y arte desde la epoca <abbr title="de los 80 a la actualidad">Msc</abbr></small></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Cursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <main id="contenido">
+        <nav>
+            <h2>Nosotros</h2>
+            <ul>
+                <li><a href="Nosotros.html"> Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    <article>
+        <h2>Formulario de Contacto</h2>
+        <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros:</p>
+        <form action="#" method="post">
+            <!--seccion de nombre-->
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="ingrese su nombre aqui"><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required minlength="3" maxlength="60" placeholder="ingrese su correo aqui"><br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="ingrese su telefono aqui" pattern="[0-9]{8}"><br><br>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required minlength="8"><small> (Mínimo 8 caracteres)</small><br><br>
+                 <legend>Días disponibles</legend>
+                <label for="lunes">Lunes</label>
+                <input type="checkbox" id="lunes" name="dias[]" value="lunes"><br>
+                <label for="martes">Martes</label> 
+                <input type="checkbox" id="martes" name="dias[]" value="martes"><br>
+                <label for="miercoles">Miércoles</label>
+                <input type="checkbox" id="miercoles" name="dias[]"> <br><br>
+                
+            </fieldset>
+        
+            <fieldset>
+                <legend>Mas detalles del curso</legend>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+            </fieldset>
+
+             <!-- CONFIRMACIÓN -->
+        <fieldset>
+          <legend>Confirmación</legend>
+
+          <p>
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">
+              Acepto que me contacten por los medios indicados *
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar matrícula</button>
+          <button type="reset">Limpiar formulario</button>
+        </p>
+      </form>
+    </article>
+      </p>
+    </aside>
+</main>
+<p><a href="#inicio"> volver al inicio</a></p>
+
+    <!-- Este es el pie de página -->
+    <footer>
+        <address>
+            <p>Escuela de Musica - Ecos del Tiempo</p>
+            <p>Dirección: Calle 123, Ciudad, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: <a href="mailto:info@ecosdeltiempo.com">info@ecosdeltiempo.com</a></p>
+        </address>
+        <p>Sitio web: <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">www.ecosdeltiempo.com </a></p>
+        <p>
+            <small>&copy; 2026 Escuela de Musica - Ecos del Tiempo. <strong>Los derechos reservados.</strong></small>
+        </p>
+        <p> <small>@Dayanna Sanchez</a></small></p>
+    </footer>
+</body>
+</html>
