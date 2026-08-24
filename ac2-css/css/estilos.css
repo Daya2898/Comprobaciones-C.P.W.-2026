@@ -190,7 +190,7 @@ h3{
     padding-left: 1rem;
     display: block;
 }
-
+/*estilo-galeria*/
 .tabla-catalogo{
     width: 100;
     border-collapse: collapse;
@@ -200,5 +200,6 @@ h3{
 
 .tabla-catalogo tbody tr:nth-child(even){
     background-color: #a3bbdb;
-
 }
+
+.formulario-pedido
