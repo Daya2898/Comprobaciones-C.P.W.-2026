@@ -1,0 +1,138 @@
+/*Estilo al sitio de el Rincón de las letras*/
+:root {
+    --color-1primario: #2c3e50; /*Estas varibles nos ayuda a llevar un orden al distribuirlo en la página*/
+    --color-2secundario:#e74c3c;
+    --color-3texto: #f8f9fa;
+    --color-blanco:#fff;
+    --color-borde: #a3bbdb;
+
+    /*Tipografia del sitio*/
+    --font-family:'Times New Roman', Arial, Sans Serif;
+    --spa-sm:1.6rem;
+    --spa-md:2.4rem;
+    --spa-lg:3.2rem;
+    --radio:8px;
+
+    --Sombra-cont: 0,4px,12px rgba(0, 0, 0, o.1)
+}
+
+/*reset-inicial*/
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+main  { 
+    flex: 1;
+}
+
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    background-color: var(--color-blanco);
+    min-height: 100vh; 
+}
+h1, h2, h3 {
+    line-height: 1.2;
+    color: var(--color-1primario);
+}
+
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: #fff;
+}
+h2 {
+    font-size: 2.4rem;
+
+}
+h3{
+    font-size: 1.8rem;
+}
+#cabecera {
+    position: sticky;
+    padding: var(--spa-sm);
+    top: 0;
+    display: flex;
+    z-index:100;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spa-sm) var(--spa-md);
+    background-color: #2c3e50;
+    border-bottom: 1px solid rgba(44,62, 80, 0.1);
+    margin-top: auto;
+
+}
+.marca{
+    text-align: center;
+}
+.lema{
+    color: var(--color-3texto);
+}
+.enlace-activo{
+    color: #a3bbdb;
+}
+.enlace-activo:hover {
+    color:#e74c3c;
+
+}
+.menu-principal {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8rem 1.2rem;
+    transition:color 0.3s eas;
+    border-radius: 8px;
+}
+#contenido{
+    background-color: #f8f9fa;
+    padding: var(--spa-lg);
+}
+
+.boton {
+    background-color: var(--color-2secundario);
+    display:inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius:5px;
+}
+.boton-principal{
+    background-color: #a3bbdb;
+    color: var(--color-2secundario);
+
+}
+.boton-principal:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    transform: translateY(-2px);
+}
+
+.menu-principal ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spa-md)
+}
+.menu-principal a:hover, .menu-principal a:activo {
+    color: var(--color-2secundario);
+}
+#pie{
+    background-color: #2c3e50;
+}
+.pie-contenido{
+    padding: var(--spa-sm);
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    text-align: center;
+    text-wrap: wrap;
+    color: #f8f9fa;
+
+}
