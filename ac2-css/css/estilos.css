@@ -207,6 +207,20 @@ img {
     transform: translateY(-0.5rem);
     box-shadow: var(--sombra-3);
 }
+#historia p {
+    max-width: 70ch;
+}
+.cita {
+    max-width: 68rem;
+    margin: var(--spa-md), 0;
+    padding: var(--spa-md), var(--spa-lg);
+    background-color: var(--color-borde);
+    border-left: 0.5rem solid var(--color-2secundario);
+    border-radius: 0 var(--radio) var(--radio) 0;
+    box-shadow: var(--sombra-1);
+    position: relative;
+
+}
 .boton {
     background-color: var(--color-2secundario);
     display:inline-block;
