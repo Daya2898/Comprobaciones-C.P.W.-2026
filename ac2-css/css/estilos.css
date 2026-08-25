@@ -65,6 +65,14 @@ img {
     margin-right: auto;
     padding: var(--spa-lg) var(--spa-md);
 }
+#portada,
+#servicios,
+#historia,
+#existencias,
+#categorias,
+#pedido{
+    margin-bottom: var(--spa-lg);
+}
 
 #cabecera {
     position: sticky;
