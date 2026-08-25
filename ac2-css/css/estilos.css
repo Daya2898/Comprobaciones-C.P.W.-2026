@@ -14,6 +14,7 @@
     --spa-sm:1.6rem;
     --spa-md:2.4rem;
     --spa-lg:3.2rem;
+    --esp-xl: 7.2rem;
     --radio:8px;
     
     --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,.06);
@@ -247,31 +248,34 @@ img {
     font-size: 1.4rem;
     text-align: right;
     font-style: normal;
-    
-}
-.boton {
-    background-color: var(--color-2secundario);
-    display:inline-block;
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #fff;
-    border-radius:5px;
-    bottom: 1rem;
-    right: 2rem;
-    z-index: 99;
-    
-}
-.boton-principal{
-    background-color: #a3bbdb;
-    color: var(--color-2secundario);
 
 }
-.boton-principal:hover{
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    transform: translateY(-2px);
+
+/*contenido-secundario*/
+#aviso,
+.panel-aviso {
+    background-color: var(--color-borde);
+    border-left: 0.4rem solid  var(--color-1primario);
+    border-radius: 0 var(--radio) var(--radio) 0;
+    padding: var(--spa-md);
+    margin: var(--spa-lg) auto;
+    max-width: var(--ancho-max);
+    box-shadow: var(--sombra-1);
+}
+
+#aviso h2 {
+    font-size: 2.2rem;
+    margin-bottom: var(--spa-xs);
+}
+#aviso p {
+    margin-bottom: 0;
+}
+/*Pie*/
+#pie {
+    background-color: var(--color-1primario);
+    color: var(--color-blanco);
+    padding: var(--spa-xl) var(--spa-md) var(--spa-md);
+    margin-top: var(--esp-xl);
 }
 
 .menu-principal ul {
@@ -309,17 +313,8 @@ img {
 .creditos{
     color:var(--color-blanco)
 }
-#aviso{
-    text-align: center;
-    margin: auto;
-}
-.panel-aviso{
-    background-color: #a3bbdb;
-    border-radius: var(--radio);
-    display: inline-block;
-    text-decoration: none;
-    padding: 2rem;
-}
+
+
 
 #portada{
     text-align: center;
