@@ -153,6 +153,18 @@ img {
     align-items: center;
     gap: var(--spa-md);
 }
+.hero h2 {
+    color: var(--color-1primario);
+    font-size: 3.6rem;
+    margin-bottom: 0;
+}
+.hero-texto {
+    max-width: 60ch;
+    font-size: 1.8rem;
+    margin-bottom: var(--spa-xs);
+    opacity: 0.94;
+    
+}
 .boton {
     background-color: var(--color-2secundario);
     display:inline-block;
