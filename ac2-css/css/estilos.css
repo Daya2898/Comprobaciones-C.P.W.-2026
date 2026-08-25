@@ -294,11 +294,11 @@ img {
 }
 /*primer estado*/
 .boton-principal {
-    border-color: var(--color-borde);
+    background-color: var(--color-borde);
     color: var(--color-2secundario);
 }
 .boton-principal:hover {
-    border-color: var(--color-1primario);
+    background-color: var(--color-1primario);
     transform: translateY(-0.2rem);
 }
 /*segundo estado*/
@@ -340,7 +340,7 @@ img {
 }
 .pie.contenido {
     max-width: var(--ancho-max);
-    margin: auto;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax (26rem, 1fr));
