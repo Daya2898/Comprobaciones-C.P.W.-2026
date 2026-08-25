@@ -4,7 +4,7 @@
     --color-2secundario:#e74c3c;
     --color-3texto: #1a1a1a;
     --color-blanco:#fff;
-    --color-titulo:rgb(23, 76, 80);
+    --color-titulo:rgb(95, 142, 146);
     --color-borde: #a3bbdb;
 
     /*Tipografia del sitio*/
@@ -140,12 +140,19 @@ img {
     color:var(--color-2secundario);
     background-color: var(--color-borde);
 }
+ 
+.hero {
+    background: linear-gradient(135deg, var(--color-borde), var(--color-blanco));
+    color: var(--color-blanco);
+    padding: var(--spa-lg) var(--spa-md);
+    border-radius: var(--radio);
+    text-align: center;
 
-#contenido{
-    background-color: #f8f9fa;
-    padding: var(--spa-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spa-md);
 }
-
 .boton {
     background-color: var(--color-2secundario);
     display:inline-block;
