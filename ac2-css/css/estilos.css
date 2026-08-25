@@ -163,7 +163,16 @@ img {
     font-size: 1.8rem;
     margin-bottom: var(--spa-xs);
     opacity: 0.94;
-    
+
+}
+.rejilla-servicios{
+    display: flex;
+    gap: var(--spa-md);
+    flex-wrap: wrap;
+}
+.tarjeta{
+    flex: 1 1 28rem;
+
 }
 .boton {
     background-color: var(--color-2secundario);
@@ -246,18 +255,8 @@ img {
    
 }
 
-#servicios{
-    text-align: center;
-}
-.rejilla-servicios{
-    display: flex;
-}
-.tarjeta{
-    border-radius: 5px;
-    border:1px;
-    padding: var(--spa-lg);
-    
-}
+
+
 .tarjeta-pie{
     color: #e74c3c;
     padding: 1rem
