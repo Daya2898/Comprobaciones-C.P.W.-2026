@@ -93,7 +93,7 @@ img {
     max-width: var(--ancho-max);
     margin: 0 auto;
     padding: var(--spa-sm) var(--spa-sm);
-    background-color:var(--color-blanco);
+    background-color:var(--color-1primario);
     border-bottom: 0.1rem solid var(--color-borde);
 
     position: sticky;
@@ -107,24 +107,23 @@ img {
 }
 .lema{
     font-size: 1.4rem;
-    color: var(--color-1primario);
+    color: var(--color-borde);
     margin-bottom: 0;
     font-style: italic;
 }
-.enlace-activo{
-    color: #a7c8f4;
+/*Menu principal*/
+.menu-principal{
+    display: flex;
+    gap: var(--spa-xs);
+    list-style: none;
 }
-.enlace-activo:hover {
-    color:#e74c3c;
-
-}
-.menu-principal {
+.menu-principal a {
     display: inline-block;
-    text-decoration: none;
-    padding: 8rem 1.2rem;
-    transition:color 0.3s eas;
-    border-radius: 8px;
-    padding-left: 1rem;
+    padding: var(--spa-xs) var(--spa-sm);
+    border-radius: var(--radio);
+    font-weight: 600;
+    color: var(--color-blanco);
+    transition: background-color var(--color-2secundario) var(--transicion);
     
 }
 #contenido{
