@@ -186,8 +186,26 @@ img {
     transition: transform var(--transicion), box-shadow var(--transicion);
 }
 
-.tarjetah2{
-    
+.tarjeta h3{
+    margin-bottom: var(--spa-xs);
+}
+.tarjeta p {
+    color: var(--color-3texto);
+    flex-grow: 1;
+}
+
+.tarjeta-pie{
+    margin-bottom: 0;
+    padding-top: var(--spa-xs);
+    border-top: 0.1rem solid var(--color-borde);
+    font-weight: 700;
+    color: var(--color-1primario);
+    font-size: 1.5rem;
+}
+
+.tarjeta:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: var(--sombra-3);
 }
 .boton {
     background-color: var(--color-2secundario);
@@ -268,13 +286,6 @@ img {
     font-size: 1.6rem;
     background-color: var(--Sombra-cont);
    
-}
-
-
-
-.tarjeta-pie{
-    color: #e74c3c;
-    padding: 1rem
 }
 
 .indice{
