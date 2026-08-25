@@ -1,6 +1,6 @@
 /*Estilo al sitio de el Rincón de las letras*/
 :root {
-    --color-1primario: #2c3e50; /*Estas varibles nos ayuda a llevar un orden al distribuirlo en la página*/
+    --color-1primario: #254c73; /*Estas varibles nos ayuda a llevar un orden al distribuirlo en la página*/
     --color-2secundario:#e74c3c;
     --color-3texto: #1a1a1a;
     --color-blanco:#fff;
@@ -73,6 +73,17 @@ img {
 #pedido{
     margin-bottom: var(--spa-lg);
 }
+#portada >h2,
+#servicios >h2,
+#historia >h2,
+#existencias >h2,
+#categorias >h2,
+#pedido >h2{
+    margin-bottom: var(--spa-md);
+    padding-bottom: var(--spa-xs);
+    border-bottom: 0.2rem solid var(--color-borde);
+}
+
 
 #cabecera {
     position: sticky;
