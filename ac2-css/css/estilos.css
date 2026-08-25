@@ -100,11 +100,16 @@ img {
     top: 0;
     z-index: 100;
 }
-.marca{
-    text-align: center;
+
+.marca h1{
+    font-size: 2.6rem;
+    margin-bottom: 0;
 }
 .lema{
-    color: var(--color-blanco);
+    font-size: 1.4rem;
+    color: var(--color-1primario);
+    margin-bottom: 0;
+    font-style: italic;
 }
 .enlace-activo{
     color: #a7c8f4;
