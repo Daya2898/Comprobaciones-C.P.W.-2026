@@ -234,6 +234,19 @@ img {
     color: var(--color-2secundario);
     opacity: 0.22;
     line-height: 1;
+
+}
+.cita p {
+    font-family: var(--color-titulo);
+    font-size: 2.0rem;
+    font-style: italic;
+    position: relative;
+}
+.cita-autoria {
+    color: var(--color-2secundario);
+    font-size: 1.4rem;
+    text-align: right;
+    font-style: normal;
     
 }
 .boton {
