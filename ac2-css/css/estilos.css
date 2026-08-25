@@ -129,6 +129,7 @@ img {
     color: var(--color-blanco);
     transition: background-color var(--color-2secundario) var(--transicion);
     
+    
 }
 
 /*pseudoclases*/
@@ -143,6 +144,13 @@ img {
 .menu-principal .enlace-activo{
     color:var(--color-2secundario);
     background-color: var(--color-borde);
+
+}
+.menu-principal ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spa-md);
+    
 }
  
 .hero {
@@ -270,6 +278,59 @@ img {
 #aviso p {
     margin-bottom: 0;
 }
+
+/*botones*/
+
+.boton {
+    display: inline-block;
+    padding: var(--spa-xs) var(--spa-md); 
+    border: none;
+    border-radius: var(--radio);
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transicion), transform var(--transicion);
+}
+/*primer estado*/
+.boton-principal {
+    border-color: var(--color-borde);
+    color: var(--color-2secundario);
+}
+.boton-principal:hover {
+    border-color: var(--color-1primario);
+    transform: translateY(-0.2rem);
+}
+/*segundo estado*/
+.boton-principal:active {
+    transform: translateY(0);
+}
+.boton-secundario {
+    background-color: var(--color-borde);
+    color: var(--color-1primario);
+}
+.boton-secundario:hover {
+    background-color: var(--color-titulo);
+}
+.boton:focus {
+    outline: 0.2rem solid var(--color-2secundario);
+    outline-offset: 0.2rem;
+}
+.volver {
+    text-align: center;
+    margin-top: var(--spa-lg);
+}
+.volver a {
+    font-size: 1.4rem;
+    color: var(--color-titulo);
+    border-bottom: 0.1rem solid var(--color-borde);
+    transition: color var(--transicion), border-color var(--transicion);
+}
+.volver a:hover {
+    color: var(--color-1primario);
+    border-bottom-color: var(--color-2secundario) ;
+
+}
 /*Pie*/
 #pie {
     background-color: var(--color-1primario);
@@ -277,66 +338,48 @@ img {
     padding: var(--spa-xl) var(--spa-md) var(--spa-md);
     margin-top: var(--esp-xl);
 }
+.pie.contenido {
+    max-width: var(--ancho-max);
+    margin: auto;
 
-.menu-principal ul {
-    display: flex;
-    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (26rem, 1fr));
     gap: var(--spa-md);
-    
+    align-items: start;
 }
-.menu-principal a:hover, .menu-principal a:activo {
+.datos-contacto {
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.9;
+    opacity: 0.9;
+}
+.datos-contacto a {
     color: var(--color-2secundario);
-    
+    border-bottom: 0.1rem solid rgba(255,255, 255, .4);
+    transition: border-color var(--color-borde);
 }
-.menu-principal a{
-    color: #a3bbdb;
+.datos-contacto a:hover {
+    border-bottom-color: var(--color-blanco);
 }
-#pie{
-    background-color: #2c3e50;
-    text-decoration: none;
-}
-.pie-contenido{
-    padding: var(--spa-sm);
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem;
-    color: #f8f9fa;
-    
-}
-.pie-datos{
+.creditos {
+    grid-column: 1 / -1;
+    padding-top: var(--spa-sm);
+    border-top: 0.1rem solid rgba(255,255, 255, .22);
     text-align: center;
-    text-wrap: wrap;
-}
-.pie-contenido a{
-    color: var(--color-borde);
-}
-.creditos{
-    color:var(--color-blanco)
+    font-size: 1.3rem;
+    opacity: 0.75;
+    margin-bottom: 0;
 }
 
 
 
-#portada{
-    text-align: center;
-    padding: var(--spa-sm);
-    font-family: var(--font-family);
-    font-size: 1.6rem;
-    background-color: var(--Sombra-cont);
-   
-}
 
-.indice{
-    padding-left: 1rem;
-    display: block;
-}
-/*estilo-galeria*/
-.tabla-catalogo{
-    width: 100;
-    border-collapse: collapse;
-    margin-top: var(--spa-sm);
-    
-}
 
-.tabla-catalogo tbody tr:nth-child(even){
-    background-color: #a3bbdb;
-}
+
+
+
+
+
+
+
+
