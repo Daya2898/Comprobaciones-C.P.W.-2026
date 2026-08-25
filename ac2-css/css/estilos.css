@@ -15,7 +15,10 @@
     --spa-md:2.4rem;
     --spa-lg:3.2rem;
     --radio:8px;
-    --Sombra-cont: 0 0.2rem 0.6 rgba(0, 0, 0, 0.6);
+    
+    --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,.06);
+    --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,.10);
+    --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,.16);
     --ancho-max:114rem;
     --transicion:0.25 ease;
 }
@@ -172,7 +175,19 @@ img {
 }
 .tarjeta{
     flex: 1 1 28rem;
+    background-color: var(--color-blanco);
+    padding: var(--spa-md);
+    border: 0.1rem solid var(--color-2secundario);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
 
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transicion), box-shadow var(--transicion);
+}
+
+.tarjetah2{
+    
 }
 .boton {
     background-color: var(--color-2secundario);
