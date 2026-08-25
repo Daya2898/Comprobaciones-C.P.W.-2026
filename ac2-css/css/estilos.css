@@ -221,6 +221,21 @@ img {
     position: relative;
 
 }
+
+/*pseudoelemento*/
+
+.cita::before{
+    content: '\201c';
+    position: absolute;
+    top: -0.5rem auto;
+    left: 1.2rem;
+    font-family: var(--fuente-texto);
+    font-size: 7rem;
+    color: var(--color-2secundario);
+    opacity: 0.22;
+    line-height: 1;
+    
+}
 .boton {
     background-color: var(--color-2secundario);
     display:inline-block;
