@@ -14,7 +14,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 /* ─── VARIABLES ──────────────────────────────────────────────────────── */
 :root {
@@ -39,12 +41,16 @@
 
 
 /* ─── BASE ───────────────────────────────────────────────────────────── */
+html {
+  font-size: 62.5% ;
+}
 body {
   font-family: var(--fuente-texto);
-  font-size: 17px;
+  font-size: 1.7rem;
   line-height: 1.65;
   color: var(--tinta);
   background-color: var(--crema);
+  overflow-x: hidden; /*evita desbordes hotizontales*/
 }
 
 h1, h2, h3 {
@@ -53,28 +59,32 @@ h1, h2, h3 {
   color: var(--verde);
 }
 
-h1 { font-size: 52px; }
-h2 { font-size: 34px; }
-h3 { font-size: 22px; }
+h1 { font-size: 3.4rem; }
+h2 { font-size: 2.6rem; }
+h3 { font-size: 2.0rem; }
 
-p { margin-bottom: 18px; }
+p { margin-bottom: 1.8rem; }
 
 a {
   color: var(--terracota);
   text-decoration: none;
 }
 
-img {
+img, picture {
   display: block;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
-  width: 1180px;
+  width: 100%;
+  max-width: 118rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 90px 30px;
+  padding: 4rem 2rem;
 }
 
 .seccion-alterna {
@@ -83,35 +93,38 @@ img {
 }
 
 .seccion-alterna > * {
-  width: 1180px;
+  width: 100%;
+  max-width: 118rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .seccion-titulo {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .seccion-entrada {
-  width: 640px;
+  width: 100%;
+  max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 3.2rem;
   text-align: center;
   color: var(--suave);
 }
 
 .pagina-encabezado {
-  width: 1180px;
+  width: 100%;
+  max-width: 118rem;
   margin: 0 auto;
-  padding: 80px 30px 48px;
+  padding: 4rem 2rem2.4rem;
   text-align: center;
 }
 
-.pagina-titulo   { margin-bottom: 10px; }
-.pagina-bajada   { color: var(--suave); font-size: 19px; }
-.subtitulo       { margin-top: 28px; margin-bottom: 10px; }
+.pagina-titulo   { margin-bottom: 1rem; }
+.pagina-bajada   { color: var(--suave); font-size: 1.8rem; }
+.subtitulo       { margin-top: 2.8rem; margin-bottom: 1rem; }
 
 
 /* ─── CABECERA ───────────────────────────────────────────────────────── */
