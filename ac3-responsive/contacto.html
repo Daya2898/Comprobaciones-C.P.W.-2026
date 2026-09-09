@@ -30,11 +30,20 @@
       <span class="marca-texto">Casa Tomillo</span>
     </a>
 
-    <nav class="navegacion" aria-label="Navegación principal">
+      <nav class="navegacion">
+      <!-- Control e ícono del menú hamburguesa -->
+      <input type="checkbox" id="check-menu" class="menu-check" aria-label="Abrir menú de navegación">
+      <label for="check-menu" class="menu-icono" aria-hidden="true">
+        <span class="linea-hamburguesa"></span>
+        <span class="linea-hamburguesa"></span>
+        <span class="linea-hamburguesa"></span>
+      </label>
+
+      <!-- Lista del menú original -->
       <ul class="menu">
-        <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+        <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
-        <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
+        <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
       </ul>
     </nav>
 
