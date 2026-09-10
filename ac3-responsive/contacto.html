@@ -41,9 +41,9 @@
 
       <!-- Lista del menú original -->
       <ul class="menu">
-        <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
+        <li><a href="index.html" class="menu-enlace ">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
-        <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
+        <li><a href="contacto.html" class="menu-enlace activo">Contacto</a></li>
       </ul>
     </nav>
 
@@ -181,10 +181,14 @@
         </div>
 
         <figure class="columna-figura">
+        <picture>
+          <source srcset="recursos/fachada.sm.jpg" media="(min-width:600px)">
+          <source srcset="recursos/fachada.md.jpg" media="(min-width:1024px)">
           <img src="recursos/fachada.jpg"
                alt="Fachada de la escuela con su rótulo de madera"
                width="1200" height="900" loading="lazy">
-          <figcaption class="figura-pie">La entrada está sobre la calle 7</figcaption>
+        </picture>
+        <figcaption class="figura-pie">La entrada está sobre la calle 7</figcaption>
         </figure>
 
       </div>

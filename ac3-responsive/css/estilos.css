@@ -43,6 +43,7 @@
 /* ─── ( Unidades Relativas ) ────────────────────────────── */
 html {
   font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -195,7 +196,7 @@ img, picture {
   left: 0;
   right: 0;
   background-color: var(--blanco);
-  padding: 1.6rem 2rem;
+  padding: 1.6rem 2.4rem;
   border-bottom: 1px solid var(--linea);
   box-shadow: var(--sombra);
   gap: 0.8rem;
@@ -206,17 +207,6 @@ img, picture {
 /* Desplegar el menú al marcar la casilla */
 .menu-check:checked ~ .menu {
   display: flex;
-}
-
-/* Animación  */
-.menu-check:checked ~ .menu-icono .linea-hamburguesa:nth-child(1) {
-  transform: translateY(0.8rem) rotate(45deg);
-}
-.menu-check:checked ~ .menu-icono .linea-hamburguesa:nth-child(2) {
-  opacity: 0;
-}
-.menu-check:checked ~ .menu-icono .linea-hamburguesa:nth-child(3) {
-  transform: translateY(-0.8rem) rotate(-45deg);
 }
 
 /* Áreas táctiles adecuadas (mínimo 44px) */
