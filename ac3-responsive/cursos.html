@@ -41,7 +41,7 @@
 
       <!-- Lista del menú original -->
       <ul class="menu">
-        <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
+        <li><a href="index.html" class="menu-enlace">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
         <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
       </ul>
@@ -227,9 +227,13 @@
         </div>
 
         <figure class="columna-figura">
+          <picture>
+            <source srcset="recursos/taller-5-sm.jpg" media="(min-width:600px)">
+            <source srcset="recursos/taller-5-sm.jpg" media="(min-width:1200px)">
           <img src="recursos/taller-5.jpg"
                alt="Puesto de trabajo individual con utensilios ordenados"
                width="1200" height="900" loading="lazy">
+          </picture>
           <figcaption class="figura-pie">Cada persona tiene su propio puesto</figcaption>
         </figure>
 
